@@ -25,11 +25,30 @@ public class MainActivity extends AppCompatActivity {
         double resultado = peso / Math.pow((altura / 100), 2);
         String categoria;
 
-        if(resultado <= 25){
-            categoria = "saudável";
+        if(resultado <= 16){
+            categoria = getResources().getText(R.string.magreza_grave).toString();
+        }
+        else if(resultado <= 17){
+            categoria = getResources().getText(R.string.magreza_moderada).toString();
+        }
+        else if(resultado <= 18.5){
+            categoria = getResources().getText(R.string.magreza_leve).toString();
+        }
+
+        else if(resultado <= 25){
+            categoria = getResources().getText(R.string.saudavel).toString();
+        }
+        else if(resultado < 30){
+            categoria = getResources().getText(R.string.sobrepeso).toString();
+        }
+        else if(resultado <= 35){
+            categoria = getResources().getText(R.string.obesidade1).toString();
+        }
+        else if(resultado <= 40){
+            categoria = getResources().getText(R.string.obesidade2).toString();
         }
         else{
-            categoria = "de sobrepeso";
+            categoria = getResources().getText(R.string.obesidade3).toString();
         }
 
         textoResultado.setText("O seu Índice de Massa Corporal é de " + String.format("%.2f", resultado)

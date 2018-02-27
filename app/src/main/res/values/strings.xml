@@ -5,4 +5,12 @@
     <string name="imc">Calculador de IMC</string>
     <string name="mensagem">Mensagem</string>
     <string name="calcular">Calcular</string>
+    <string name="magreza_grave">Resultado</string>
+    <string name="magreza_moderada">Resultado</string>
+    <string name="magreza_leve">Resultado</string>
+    <string name="saudavel">Resultado</string>
+    <string name="sobrepeso">Resultado</string>
+    <string name="obesidade1">Resultado</string>
+    <string name="obesidade2">Resultado</string>
+    <string name="obesidade3">Resultado</string>
 </resources>
